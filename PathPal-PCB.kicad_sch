@@ -5135,10 +5135,6 @@
 		(uuid "3f59c85c-b137-427c-aa5c-90595229c237")
 	)
 	(no_connect
-		(at 100.33 78.74)
-		(uuid "4ab58525-caf4-499c-9f60-c09435d31c6e")
-	)
-	(no_connect
 		(at 140.97 76.2)
 		(uuid "85354033-89f5-444a-8bbb-0bd3996c89d9")
 	)
@@ -5562,6 +5558,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 78.74) (xy 100.33 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64ef2b89-8c76-46f9-88ff-4d1aa8f26d9a")
+	)
+	(wire
+		(pts
 			(xy 248.92 133.35) (xy 248.92 138.43)
 		)
 		(stroke
@@ -5802,6 +5808,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 77.47) (xy 50.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a14ab88a-ef9d-4252-8b13-aa3f7dcd2fb9")
+	)
+	(wire
+		(pts
 			(xy 194.31 43.18) (xy 198.12 43.18)
 		)
 		(stroke
@@ -5979,6 +5995,16 @@
 			(type default)
 		)
 		(uuid "b83db524-7025-439c-ab07-a36a98e576ae")
+	)
+	(wire
+		(pts
+			(xy 50.8 74.93) (xy 59.69 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b859ab67-f198-49ee-9a9c-425755e2b3ea")
 	)
 	(wire
 		(pts
@@ -6252,6 +6278,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 77.47) (xy 59.69 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb7d60e9-ec05-4d3d-bf88-54e6fe336417")
+	)
+	(wire
+		(pts
 			(xy 125.73 43.18) (xy 125.73 45.72)
 		)
 		(stroke
@@ -6299,6 +6335,16 @@
 			(type default)
 		)
 		(uuid "fc3fca4a-c112-467f-82a5-01b154d9821b")
+	)
+	(label "BatLow"
+		(at 50.8 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ad7711b-4857-41d7-a174-d291addf2f6b")
 	)
 	(label "SCL"
 		(at 143.51 66.04 0)
@@ -6519,6 +6565,16 @@
 			(justify left bottom)
 		)
 		(uuid "fbb6e05f-62ef-438b-a5a7-a8db9c99e80c")
+	)
+	(label "BatLow"
+		(at 86.36 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fd3a49e7-28c9-4aa3-971f-fef4f481fe55")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8215,7 +8271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB"
+		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB_Wide_Pins"
 			(at 245.11 38.1 0)
 			(effects
 				(font
@@ -12490,6 +12546,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 50.8 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba6ce34f-472d-446f-9d93-1fd658e80974")
+		(property "Reference" "#PWR024"
+			(at 50.8 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e4ea0699-3614-444a-bde6-2096e9e15ad2")
+		)
+		(instances
+			(project ""
+				(path "/5d170015-070c-4f9e-a723-d3289cd8d8fb"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED_RGAB")
 		(at 245.11 62.23 0)
 		(unit 1)
@@ -12515,7 +12637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB"
+		(property "Footprint" "LED_THT:LED_D5.0mm-4_RGB_Wide_Pins"
 			(at 245.11 63.5 0)
 			(effects
 				(font
@@ -13705,6 +13827,75 @@
 			(project ""
 				(path "/5d170015-070c-4f9e-a723-d3289cd8d8fb"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 64.77 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e30daf8b-64b0-468a-b43e-aa8a8b7c138b")
+		(property "Reference" "J6"
+			(at 60.198 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor"
+			(at 62.992 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 64.77 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 64.77 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf734eba-bf60-40b9-8b91-f6a4b39ec628")
+		)
+		(pin "1"
+			(uuid "aa6e265d-6716-4cbc-8e6a-4fcc907437a9")
+		)
+		(instances
+			(project "PathPal-PCB"
+				(path "/5d170015-070c-4f9e-a723-d3289cd8d8fb"
+					(reference "J6")
 					(unit 1)
 				)
 			)
