@@ -7,7 +7,7 @@
 	(title_block
 		(title "PathPal PCB")
 		(date "2026-02-18")
-		(rev "V1")
+		(rev "V2")
 		(company "Senseway")
 	)
 	(lib_symbols
@@ -8058,7 +8058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
 			(at 105.41 156.21 0)
 			(effects
 				(font

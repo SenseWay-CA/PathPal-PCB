@@ -16,4 +16,4 @@ J5,PinSocket_1x02_P2.54mm_Vertical,1,Button3,
 "R7, R8",R_0805,2,150Ω,C17471
 U1,PinSocket_1x08_P2.54mm_Vertical,1,Gyro,
 U2,PinSocket_1x04_P2.54mm_Vertical,1,HR,
-U3,JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical,1,LiDAR,
+U3,PinSocket_1x06_P2.54mm_Vertical,1,LiDAR,
